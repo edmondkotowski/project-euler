@@ -9,4 +9,3 @@ def sum_square_difference(n):
 
 if __name__ == "__main__":
     print sum_square_difference(100)
-
