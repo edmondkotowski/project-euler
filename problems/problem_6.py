@@ -1,6 +1,6 @@
+# Sum square difference
 from math import pow
 
-# Sum square difference
 
 def sum_square_difference(n):
     sum_of_squares = sum(int(pow(x, 2)) for x in range(1, n+1))
