@@ -1,6 +1,7 @@
 # Names scores
 # Total names scores from names.txt
 
+
 def get_names():
     f = open('files/names.txt', 'r')
     names = f.read()
