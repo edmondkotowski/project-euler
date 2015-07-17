@@ -3,9 +3,9 @@
 
 
 def get_names():
-    f = open('files/names.txt', 'r')
-    names = f.read()
-    return sorted(names.split(','))
+    with open('files/names.txt', 'r') as f:
+        names = f.read()
+        return sorted(names.split(','))
 
 
 def names_scores():
