@@ -3,6 +3,7 @@
 # used for memoization of fibonacci sequence
 FIB_LOOKUP = {}
 
+
 def fibonacci(n):
     if n == 1 or n == 2:
         FIB_LOOKUP[n] = 1
