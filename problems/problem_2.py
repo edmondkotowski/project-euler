@@ -1,24 +1,10 @@
 # Sum of even terms in the fibonacci sequence who values are < 4 million
 
-# used for memoization of fibonacci sequence
-FIB_LOOKUP = {}
-
-
-def fibonacci(n):
-    if n == 1 or n == 2:
-        FIB_LOOKUP[n] = 1
-        return 1
-
-    if n in FIB_LOOKUP:
-        return FIB_LOOKUP[n]
-
-    FIB_LOOKUP[n] = fibonacci(n - 1) + fibonacci(n - 2)
-
-    return FIB_LOOKUP[n]
+from utilities.fibonacci import *
 
 def sum_even_fibonacci_numbers(n):
     fibonacci(n)
-    return sum([FIB_LOOKUP[x] for x in range(1, n+1) 
+    return sum([FIB_LOOKUP[x] for x in range(1, n+1)
                if FIB_LOOKUP[x] % 2 == 0])
 
 
