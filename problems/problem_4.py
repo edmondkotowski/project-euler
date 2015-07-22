@@ -1,5 +1,6 @@
 # Largest palindrome product of two 3-digit numbers
 
+
 def is_palindrome(product):
     product = str(product)
     reverse = product[::-1]

@@ -2,6 +2,7 @@
 
 from utilities.fibonacci import *
 
+
 def sum_even_fibonacci_numbers(n):
     fibonacci(n)
     return sum([FIB_LOOKUP[x] for x in range(1, n+1)
